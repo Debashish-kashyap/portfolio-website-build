@@ -714,10 +714,10 @@ export default function Portfolio() {
           <div className="flex flex-col xs:flex-row justify-center gap-3 sm:gap-6 mb-8">
             <Link
               href="mailto:kashyapdebashish556@gmail.com"
-              className="flex items-center justify-center gap-2 p-4 bg-card border border-border rounded-lg hover:bg-accent/5 hover:border-accent/30 hover:shadow-md hover:scale-105 transition-all duration-200"
+              className="flex flex-col items-center justify-center gap-3 p-4 bg-card border border-border rounded-lg hover:bg-accent/5 hover:border-accent/30 hover:shadow-md hover:scale-105 transition-all duration-200"
             >
               <Mail className="w-5 h-5" />
-              <div className="flex flex-col items-start">
+              <div className="flex flex-col items-center">
                 <span className="text-sm font-medium">Email</span>
                 <span className="text-xs text-muted-foreground">kashyapdebashish556@gmail.com</span>
               </div>

@@ -627,6 +627,32 @@ export default function Portfolio() {
                 </div>
               </div>
             </Card>
+
+            {/* Certification 3 */}
+            <Card className="p-6 hover:shadow-lg hover:border-accent/50 transition-all duration-300">
+              <div className="flex gap-4">
+                <div className="flex-shrink-0">
+                  <div className="w-12 h-12 rounded-full bg-accent/20 flex items-center justify-center">
+                    <BadgeCheck className="w-6 h-6 text-accent" />
+                  </div>
+                </div>
+                <div className="flex-1 space-y-2">
+                  <a
+                    href="https://d3s27eh1wskpwv.cloudfront.net/placement/verification_photosf6cbd697-a517-497d-a2f9-2f46d8444481.png"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="group"
+                  >
+                    <h3 className="text-lg font-semibold group-hover:text-accent transition-colors duration-200">
+                      Image Editing Serverless Application
+                      <ExternalLink className="inline-block w-4 h-4 ml-2 opacity-0 group-hover:opacity-100 transition-opacity duration-200" />
+                    </h3>
+                  </a>
+                  <p className="text-sm text-muted-foreground">Hack2Skill</p>
+                  <p className="text-xs font-medium text-accent">December 2025</p>
+                </div>
+              </div>
+            </Card>
           </div>
         </div>
       </section>

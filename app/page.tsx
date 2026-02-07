@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
 import { Github, Linkedin, Mail, ExternalLink, GraduationCap, Award, BadgeCheck, Menu, X } from "lucide-react"
 import { useState, useEffect, useRef } from "react"
+import { Typewriter } from "@/components/typewriter"
 
 export default function Portfolio() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
@@ -188,7 +189,13 @@ export default function Portfolio() {
                   Debashish Kashyap
                 </h1>
                 <p className="text-base sm:text-xl text-muted-foreground text-balance">
-                  AI Engineer | ML Developer | Cloud Practitioner
+                  <Typewriter
+                    words={["AI Engineer", "ML Developer", "Cloud Practitioner"]}
+                    speed={80}
+                    delayBetweenWords={2000}
+                    cursor={true}
+                    cursorChar="|"
+                  />
                 </p>
               </div>
               <p className="text-base sm:text-lg leading-relaxed text-muted-foreground">
@@ -356,6 +363,56 @@ export default function Portfolio() {
                   </span>
                   <span className="text-xs px-2 py-1 bg-accent/10 text-accent-foreground rounded-md hover:bg-accent/20 transition-colors duration-200 cursor-default">
                     Automation Scripts
+                  </span>
+                </div>
+              </div>
+            </Card>
+
+            {/* Project 4 */}
+            <Card className="p-4 sm:p-6 hover:shadow-xl hover:border-accent/50 transition-all duration-300 hover:-translate-y-1">
+              <div className="space-y-4">
+                <div className="flex items-start justify-between">
+                  <h3 className="text-lg sm:text-xl font-semibold">Smart Campus Helpdesk</h3>
+                  <div className="flex gap-2">
+                    <Link
+                      href="https://github.com/Debashish-kashyap"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-muted-foreground hover:text-foreground transition-all duration-200 hover:scale-110"
+                    >
+                      <Github className="w-5 h-5" />
+                    </Link>
+                    <Link
+                      href="https://smart-campus-helpdesk-487197259536.us-west1.run.app/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-muted-foreground hover:text-foreground transition-all duration-200 hover:scale-110"
+                    >
+                      <ExternalLink className="w-5 h-5" />
+                    </Link>
+                  </div>
+                </div>
+                <p className="text-sm text-muted-foreground leading-relaxed">
+                  An AI-assisted platform that centralizes campus information access for students. Features AI-powered chat for queries, admin panel for PDF management, notice publishing, and 24/7 AI-assisted support.
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  <span className="text-xs px-2 py-1 bg-accent/10 text-accent-foreground rounded-md hover:bg-accent/20 transition-colors duration-200 cursor-default">
+                    React
+                  </span>
+                  <span className="text-xs px-2 py-1 bg-accent/10 text-accent-foreground rounded-md hover:bg-accent/20 transition-colors duration-200 cursor-default">
+                    TypeScript
+                  </span>
+                  <span className="text-xs px-2 py-1 bg-accent/10 text-accent-foreground rounded-md hover:bg-accent/20 transition-colors duration-200 cursor-default">
+                    Vite
+                  </span>
+                  <span className="text-xs px-2 py-1 bg-accent/10 text-accent-foreground rounded-md hover:bg-accent/20 transition-colors duration-200 cursor-default">
+                    Google Cloud Run
+                  </span>
+                  <span className="text-xs px-2 py-1 bg-accent/10 text-accent-foreground rounded-md hover:bg-accent/20 transition-colors duration-200 cursor-default">
+                    Google Gemini API
+                  </span>
+                  <span className="text-xs px-2 py-1 bg-accent/10 text-accent-foreground rounded-md hover:bg-accent/20 transition-colors duration-200 cursor-default">
+                    Google AI Studio
                   </span>
                 </div>
               </div>
@@ -570,6 +627,32 @@ export default function Portfolio() {
                 </div>
               </div>
             </Card>
+
+            {/* Certification 3 */}
+            <Card className="p-6 hover:shadow-lg hover:border-accent/50 transition-all duration-300">
+              <div className="flex gap-4">
+                <div className="flex-shrink-0">
+                  <div className="w-12 h-12 rounded-full bg-accent/20 flex items-center justify-center">
+                    <BadgeCheck className="w-6 h-6 text-accent" />
+                  </div>
+                </div>
+                <div className="flex-1 space-y-2">
+                  <a
+                    href="https://d3s27eh1wskpwv.cloudfront.net/placement/verification_photosf6cbd697-a517-497d-a2f9-2f46d8444481.png"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="group"
+                  >
+                    <h3 className="text-lg font-semibold group-hover:text-accent transition-colors duration-200">
+                      Image Editing Serverless Application
+                      <ExternalLink className="inline-block w-4 h-4 ml-2 opacity-0 group-hover:opacity-100 transition-opacity duration-200" />
+                    </h3>
+                  </a>
+                  <p className="text-sm text-muted-foreground">Hack2Skill</p>
+                  <p className="text-xs font-medium text-accent">December 2025</p>
+                </div>
+              </div>
+            </Card>
           </div>
         </div>
       </section>
@@ -631,10 +714,10 @@ export default function Portfolio() {
           <div className="flex flex-col xs:flex-row justify-center gap-3 sm:gap-6 mb-8">
             <Link
               href="mailto:kashyapdebashish556@gmail.com"
-              className="flex items-center justify-center gap-2 p-4 bg-card border border-border rounded-lg hover:bg-accent/5 hover:border-accent/30 hover:shadow-md hover:scale-105 transition-all duration-200"
+              className="flex flex-col items-center justify-center gap-3 p-4 bg-card border border-border rounded-lg hover:bg-accent/5 hover:border-accent/30 hover:shadow-md hover:scale-105 transition-all duration-200"
             >
               <Mail className="w-5 h-5" />
-              <div className="flex flex-col items-start">
+              <div className="flex flex-col items-center">
                 <span className="text-sm font-medium">Email</span>
                 <span className="text-xs text-muted-foreground">kashyapdebashish556@gmail.com</span>
               </div>

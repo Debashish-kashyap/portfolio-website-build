@@ -11,24 +11,24 @@ export const metadata: Metadata = {
   title: "Debashish Kashyap – AI Engineer | ML Developer | Cloud Practitioner",
   description:
     "Portfolio of Debashish Kashyap, an AI Engineer and Machine Learning Developer specializing in practical AI applications, agentic systems, and cloud-based solutions. Explore projects, achievements, certifications, and contact details.",
-  generator: "v0.app",
   icons: {
     icon: [
       {
-        url: "/icon-light-32x32.png",
+        url: "/dk-icon-light.png",
         media: "(prefers-color-scheme: light)",
       },
       {
-        url: "/icon-dark-32x32.png",
+        url: "/dk-icon-dark.png",
         media: "(prefers-color-scheme: dark)",
       },
       {
-        url: "/icon.svg",
+        url: "/dk-icon.svg",
         type: "image/svg+xml",
       },
     ],
-    apple: "/apple-icon.png",
+    apple: "/dk-apple-icon.png",
   },
+    generator: 'v0.app'
 }
 
 export default function RootLayout({

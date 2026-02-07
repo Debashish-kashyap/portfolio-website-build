@@ -367,6 +367,56 @@ export default function Portfolio() {
                 </div>
               </div>
             </Card>
+
+            {/* Project 4 */}
+            <Card className="p-4 sm:p-6 hover:shadow-xl hover:border-accent/50 transition-all duration-300 hover:-translate-y-1">
+              <div className="space-y-4">
+                <div className="flex items-start justify-between">
+                  <h3 className="text-lg sm:text-xl font-semibold">Smart Campus Helpdesk</h3>
+                  <div className="flex gap-2">
+                    <Link
+                      href="https://github.com/Debashish-kashyap"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-muted-foreground hover:text-foreground transition-all duration-200 hover:scale-110"
+                    >
+                      <Github className="w-5 h-5" />
+                    </Link>
+                    <Link
+                      href="https://smart-campus-helpdesk-487197259536.us-west1.run.app/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-muted-foreground hover:text-foreground transition-all duration-200 hover:scale-110"
+                    >
+                      <ExternalLink className="w-5 h-5" />
+                    </Link>
+                  </div>
+                </div>
+                <p className="text-sm text-muted-foreground leading-relaxed">
+                  An AI-assisted platform that centralizes campus information access for students. Features AI-powered chat for queries, admin panel for PDF management, notice publishing, and 24/7 AI-assisted support.
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  <span className="text-xs px-2 py-1 bg-accent/10 text-accent-foreground rounded-md hover:bg-accent/20 transition-colors duration-200 cursor-default">
+                    React
+                  </span>
+                  <span className="text-xs px-2 py-1 bg-accent/10 text-accent-foreground rounded-md hover:bg-accent/20 transition-colors duration-200 cursor-default">
+                    TypeScript
+                  </span>
+                  <span className="text-xs px-2 py-1 bg-accent/10 text-accent-foreground rounded-md hover:bg-accent/20 transition-colors duration-200 cursor-default">
+                    Vite
+                  </span>
+                  <span className="text-xs px-2 py-1 bg-accent/10 text-accent-foreground rounded-md hover:bg-accent/20 transition-colors duration-200 cursor-default">
+                    Google Cloud Run
+                  </span>
+                  <span className="text-xs px-2 py-1 bg-accent/10 text-accent-foreground rounded-md hover:bg-accent/20 transition-colors duration-200 cursor-default">
+                    Google Gemini API
+                  </span>
+                  <span className="text-xs px-2 py-1 bg-accent/10 text-accent-foreground rounded-md hover:bg-accent/20 transition-colors duration-200 cursor-default">
+                    Google AI Studio
+                  </span>
+                </div>
+              </div>
+            </Card>
           </div>
         </div>
       </section>

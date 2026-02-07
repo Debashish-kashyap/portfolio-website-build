@@ -88,6 +88,13 @@ export default function Portfolio() {
                 Achievements
               </Link>
               <Link
+                href="#experience"
+                onClick={(e) => scrollToSection(e, "experience")}
+                className="hover:text-accent transition-all duration-200 hover:underline underline-offset-4"
+              >
+                Experience
+              </Link>
+              <Link
                 href="#certifications"
                 onClick={(e) => scrollToSection(e, "certifications")}
                 className="hover:text-accent transition-all duration-200 hover:underline underline-offset-4"
@@ -145,6 +152,13 @@ export default function Portfolio() {
                 className="py-2 hover:text-accent hover:bg-accent/10 rounded px-3 transition-all duration-200"
               >
                 Achievements
+              </Link>
+              <Link
+                href="#experience"
+                onClick={(e) => scrollToSection(e, "experience")}
+                className="py-2 hover:text-accent hover:bg-accent/10 rounded px-3 transition-all duration-200"
+              >
+                Experience
               </Link>
               <Link
                 href="#certifications"
@@ -553,6 +567,90 @@ export default function Portfolio() {
                   <p className="text-xs sm:text-sm text-muted-foreground leading-relaxed">
                     Selected for Round 2 of the university-level Coding Challenge organised by the Tech Club, Sunstone,
                     after competing successfully in Round 1.
+                  </p>
+                </div>
+              </div>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Experience Section */}
+      <section
+        id="experience"
+        ref={(el) => el && sectionsRef.current.set("experience", el)}
+        className={`py-20 px-3 sm:px-6 lg:px-8 bg-muted/30 scroll-mt-16 transition-all duration-1000 ${
+          visibleSections.has("experience") ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+        }`}
+      >
+        <div className="max-w-6xl mx-auto">
+          <div className="space-y-3 mb-12">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold">Experience</h2>
+            <p className="text-sm sm:text-base text-muted-foreground">Professional roles and contributions</p>
+          </div>
+
+          <div className="space-y-6">
+            {/* Experience 1 */}
+            <Card className="p-6 hover:shadow-lg hover:border-accent/50 transition-all duration-300">
+              <div className="flex gap-4">
+                <div className="flex-shrink-0">
+                  <div className="w-14 h-14 rounded-lg bg-card border border-border flex items-center justify-center font-bold text-lg">
+                    S
+                  </div>
+                </div>
+                <div className="flex-1 space-y-3">
+                  <div>
+                    <h3 className="text-lg sm:text-xl font-semibold">Creator</h3>
+                    <p className="text-sm text-muted-foreground">Smartly Creators Program</p>
+                  </div>
+                  <p className="text-xs font-medium text-accent">Jan 2026 - Present · 2 mos</p>
+                  <div>
+                    <p className="text-xs sm:text-sm font-medium text-foreground">Skills:</p>
+                    <p className="text-xs text-muted-foreground">Open source contributor · Teamwork</p>
+                  </div>
+                </div>
+              </div>
+            </Card>
+
+            {/* Experience 2 */}
+            <Card className="p-6 hover:shadow-lg hover:border-accent/50 transition-all duration-300">
+              <div className="flex gap-4">
+                <div className="flex-shrink-0">
+                  <div className="w-14 h-14 rounded-lg bg-card border border-border flex items-center justify-center font-bold text-lg">
+                    E
+                  </div>
+                </div>
+                <div className="flex-1 space-y-3">
+                  <div>
+                    <h3 className="text-lg sm:text-xl font-semibold">Contributor</h3>
+                    <p className="text-sm text-muted-foreground">Elite Coders</p>
+                  </div>
+                  <p className="text-xs font-medium text-accent">Jan 2026 - Present · 2 mos</p>
+                  <div>
+                    <p className="text-xs sm:text-sm font-medium text-foreground">Skills:</p>
+                    <p className="text-xs text-muted-foreground">Open source contributor · Collaboration</p>
+                  </div>
+                </div>
+              </div>
+            </Card>
+
+            {/* Experience 3 */}
+            <Card className="p-6 hover:shadow-lg hover:border-accent/50 transition-all duration-300">
+              <div className="flex gap-4">
+                <div className="flex-shrink-0">
+                  <div className="w-14 h-14 rounded-lg bg-card border border-border flex items-center justify-center font-bold text-lg">
+                    G
+                  </div>
+                </div>
+                <div className="flex-1 space-y-3">
+                  <div>
+                    <h3 className="text-lg sm:text-xl font-semibold">Student Member</h3>
+                    <p className="text-sm text-muted-foreground">GDG On Campus | Assam down town University</p>
+                  </div>
+                  <p className="text-xs font-medium text-accent">Sep 2025 - Present · 6 mos</p>
+                  <p className="text-xs text-muted-foreground">Guwahati, Assam, India</p>
+                  <p className="text-xs sm:text-sm text-muted-foreground leading-relaxed">
+                    Actively participated as a student member in GDG on Campus AdtU, engaging in Gen AI Study Jams, hackathons, and technical sessions. Gained hands-on exposure to emerging technologies while contributing to a collaborative and innovative community.
                   </p>
                 </div>
               </div>

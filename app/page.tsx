@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
 import { Github, Linkedin, Mail, ExternalLink, GraduationCap, Award, BadgeCheck, Menu, X } from "lucide-react"
 import { useState, useEffect, useRef } from "react"
+import { Typewriter } from "@/components/typewriter"
 
 export default function Portfolio() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
@@ -188,7 +189,13 @@ export default function Portfolio() {
                   Debashish Kashyap
                 </h1>
                 <p className="text-base sm:text-xl text-muted-foreground text-balance">
-                  AI Engineer | ML Developer | Cloud Practitioner
+                  <Typewriter
+                    words={["AI Engineer", "ML Developer", "Cloud Practitioner"]}
+                    speed={80}
+                    delayBetweenWords={2000}
+                    cursor={true}
+                    cursorChar="|"
+                  />
                 </p>
               </div>
               <p className="text-base sm:text-lg leading-relaxed text-muted-foreground">

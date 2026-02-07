@@ -2,6 +2,7 @@
 
 import type React from "react"
 import Link from "next/link"
+import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
 import { Github, Linkedin, Mail, ExternalLink, GraduationCap, Award, BadgeCheck, Menu, X } from "lucide-react"
@@ -594,9 +595,13 @@ export default function Portfolio() {
             <Card className="p-6 hover:shadow-lg hover:border-accent/50 transition-all duration-300">
               <div className="flex gap-4">
                 <div className="flex-shrink-0">
-                  <div className="w-14 h-14 rounded-lg bg-card border border-border flex items-center justify-center font-bold text-lg">
-                    S
-                  </div>
+                  <Image
+                    src="/images/image.png"
+                    alt="Smartly Creators Program"
+                    width={56}
+                    height={56}
+                    className="w-14 h-14 rounded-lg object-cover"
+                  />
                 </div>
                 <div className="flex-1 space-y-3">
                   <div>
@@ -616,9 +621,13 @@ export default function Portfolio() {
             <Card className="p-6 hover:shadow-lg hover:border-accent/50 transition-all duration-300">
               <div className="flex gap-4">
                 <div className="flex-shrink-0">
-                  <div className="w-14 h-14 rounded-lg bg-card border border-border flex items-center justify-center font-bold text-lg">
-                    E
-                  </div>
+                  <Image
+                    src="/images/image.png"
+                    alt="Elite Coders"
+                    width={56}
+                    height={56}
+                    className="w-14 h-14 rounded-lg object-cover"
+                  />
                 </div>
                 <div className="flex-1 space-y-3">
                   <div>
@@ -638,9 +647,13 @@ export default function Portfolio() {
             <Card className="p-6 hover:shadow-lg hover:border-accent/50 transition-all duration-300">
               <div className="flex gap-4">
                 <div className="flex-shrink-0">
-                  <div className="w-14 h-14 rounded-lg bg-card border border-border flex items-center justify-center font-bold text-lg">
-                    G
-                  </div>
+                  <Image
+                    src="/images/image.png"
+                    alt="GDG On Campus"
+                    width={56}
+                    height={56}
+                    className="w-14 h-14 rounded-lg object-cover"
+                  />
                 </div>
                 <div className="flex-1 space-y-3">
                   <div>
